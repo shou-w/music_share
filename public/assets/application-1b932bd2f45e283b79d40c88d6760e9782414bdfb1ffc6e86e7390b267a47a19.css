@@ -1,0 +1,537 @@
+@charset "UTF-8";
+/* 共通レイアウト ================================ */
+/* line 3, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+body {
+  padding-top: 70px;
+  color: #364a4d;
+}
+
+/* line 8, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+ul, li {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 13, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+a {
+  text-decoration: none;
+  color: #1f89e2;
+}
+
+/* line 18, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+a:hover {
+  text-decoration: underline;
+  color: #1b7ccd;
+}
+
+/* line 23, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+/* line 31, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.heading {
+  display: inline-block;
+}
+
+/* フォント
+================================ */
+/* line 37, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+/* line 41, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+h1 {
+  font-size: 2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+/* line 47, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  /*margin-bottom: 30px;*/
+  /*font-weight: normal;*/
+}
+
+/* line 54, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* ヘッダー ================================ */
+/* line 60, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.navbar {
+  height: 65px;
+  width: 100%;
+  background-color: #f98d0f;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  margin-bottom: 20px;
+}
+
+/* line 71, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+#logo {
+  float: left;
+  font-size: 1.7em;
+  padding-top: 12px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+/* line 79, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+#logo a {
+  color: #fff;
+}
+
+/* line 83, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+#logo a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 88, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.header-right {
+  float: right;
+  margin: 0 auto;
+}
+
+/* line 93, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.header-right a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 99, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.header-right li {
+  line-height: 65px;
+  padding: 0 18px;
+  float: left;
+  color: white;
+}
+
+/* line 106, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.vertical-line {
+  height: 22px;
+  margin-top: 22px;
+  margin-right: -36px;
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* line 113, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.link-bg {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+/* line 118, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.link-bg:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* フッター ================================ */
+/* line 123, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+footer {
+  margin-top: 100px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #848484;
+}
+
+/* line 130, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+footer small {
+  float: left;
+}
+
+/* ボタン ================================ */
+/* line 135, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 146, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.btn-large {
+  padding: 6px 140px;
+  font-size: 18px;
+}
+
+/* 「保存」ボタン */
+/* line 152, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.primary-btn {
+  background-color: #2333bf;
+}
+
+/* line 156, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.primary-btn:hover {
+  background-color: #3c49c1;
+}
+
+/*　「新規登録」と「編集」ボタン　*/
+/* line 161, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.register-btn, .edit-btn {
+  background-color: #2333bf;
+  margin-top: 30px;
+}
+
+/* line 166, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.register-btn:hover, .edit-btn:hover {
+  background-color: #3c49c1;
+  color: white;
+  text-decoration: none;
+}
+
+/*　「戻る」ボタン　*/
+/* line 173, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.destroy-btn {
+  background-color: #2333bf;
+}
+
+/* line 177, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.destroy-btn:hover {
+  background-color: #3c49c1;
+  color: white;
+  text-decoration: none;
+}
+
+/* フォーム================================ */
+/* line 184, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+input, textarea, select {
+  border: 1px solid #bbb;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+
+/* line 191, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+}
+
+/*　エラーメッセージ　*/
+/* line 204, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.alert {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  line-height: 40px;
+  padding-left: 15px;
+  font-size: small;
+}
+
+/* line 212, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+
+/* line 217, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.alert-danger {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* line 222, /Users/shou/gatebook/app/assets/stylesheets/common.scss */
+.alert-danger ul li {
+  list-style-type: disc;
+}
+/* line 1, /Users/shou/gatebook/app/assets/stylesheets/home.scss */
+.top-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 7, /Users/shou/gatebook/app/assets/stylesheets/home.scss */
+.top-wrapper img {
+  width: 45%;
+}
+
+/* line 11, /Users/shou/gatebook/app/assets/stylesheets/home.scss */
+.register-wrapper h1 {
+  font-size: 35px;
+}
+@charset "UTF-8";
+/* line 4, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 「投稿する」「保存」ボタン */
+/* line 16, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.primary-btn {
+  width: 250px;
+  background-color: #2333bf;
+  float: right;
+}
+
+/* line 22, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.primary-btn:hover {
+  background-color: #3c49c1;
+}
+
+/*　「編集」ボタン　*/
+/* line 27, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.edit-btn {
+  background-color: #2333bf;
+}
+
+/* line 31, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.edit-btn:hover {
+  background-color: #3c49c1;
+  color: white;
+  text-decoration: none;
+}
+
+/*　「削除」ボタン　*/
+/* line 38, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.destroy-btn {
+  background-color: #fc0505;
+}
+
+/* line 42, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.destroy-btn:hover {
+  background-color: #f22c2c;
+  color: white;
+  text-decoration: none;
+}
+
+/* フォーム================================ */
+/* line 49, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+input, textarea {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+/* line 55, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 18px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+}
+
+/* line 67, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.title-field {
+  width: 480px;
+}
+
+/* line 71, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.content-field {
+  height: 90px;
+  width: 956px;
+}
+
+/* 投稿一覧 ================================ */
+/* line 76, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.notes {
+  margin: 0;
+  float: left;
+  width: 50%;
+}
+
+/* line 81, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.notes h2 {
+  margin-top: 0;
+}
+
+/* line 84, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.notes li {
+  overflow: auto;
+  padding: 14px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* 投稿 ================================ */
+/* line 91, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.notes .title, .notes .content {
+  display: block;
+}
+
+/* line 95, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.notes .title {
+  padding-top: 8px;
+}
+
+/* line 99, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.notes img {
+  display: inline-block;
+  margin-right: 6%;
+  margin-bottom: 6%;
+  float: left;
+  width: 56px;
+  height: 56px;
+}
+
+/* line 108, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.show-note li {
+  padding: 30px 40px;
+  background-color: #DEE6EA;
+  border-radius: 5px;
+}
+
+/* line 114, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.show-note .title, .show-note .content {
+  display: block;
+}
+
+/* line 118, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.show-note .title {
+  padding-top: 8px;
+}
+
+/* line 121, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.show-note img {
+  display: inline-block;
+  margin-right: 5px;
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 6%;
+  margin-bottom: 6%;
+}
+
+/* 投稿フォーム ================================ */
+/* line 133, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.user-id-field {
+  width: 100%;
+}
+
+/* line 136, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.title-field {
+  width: 97.2%;
+}
+
+/* line 139, /Users/shou/gatebook/app/assets/stylesheets/notes.scss */
+.content-field {
+  height: 90px;
+  width: 97.2%;
+}
+@charset "UTF-8";
+/* 新規ユーザー作成フォーム ================================ */
+/* line 7, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.name-field, .email-field {
+  width: 45%;
+}
+
+/* ユーザー一覧 ================================ */
+/* line 12, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.add-user-btn {
+  background-color: #239b76;
+  margin-top: 16px;
+  float: right;
+}
+
+/* line 18, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.add-user-btn:hover {
+  background-color: #28b086;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 24, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.user-list li {
+  overflow: auto;
+  padding: 10px 0;
+  margin-left: 5%;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* line 31, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.user-list img {
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 2%;
+  float: left;
+  width: 56px;
+}
+
+/* line 39, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.user-list a {
+  display: inline-block;
+  margin-top: 22px;
+}
+
+/* ユーザーのshowページ ================================ */
+/* line 46, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.sidebar {
+  width: 34%;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 10%;
+}
+
+/* line 53, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.label {
+  color: #C0C0C2;
+}
+
+/* line 57, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.user-info {
+  margin: 10px 0 30px 0;
+}
+
+/* line 61, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.user-info .profile_img {
+  width: 140px;
+  height: 140px;
+}
+
+/* ユーザー共通 ================================ */
+/* line 67, /Users/shou/gatebook/app/assets/stylesheets/users.scss */
+.profile_img {
+  width: 52px;
+  height: 52px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
