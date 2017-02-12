@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'comments/new'
+
   devise_for :users
 
   resources :users, only: [:index, :show, :edit, :update] do
